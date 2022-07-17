@@ -1,0 +1,21 @@
+//¿¿¿¿¿¿¿ ¿¿¿¿¿ ¿¿¿¿¿¿.
+#include <iostream>
+#include <string>
+using namespace std;
+void check_pass (string password){
+    string valid_pass="qwerty123";
+    if (password==valid_pass){
+        cout<<"¿¿¿¿¿¿ ¿¿¿¿¿¿¿¿." << endl;
+    } else {
+        cout << "¿¿¿¿¿¿¿¿ ¿¿¿¿¿¿!" << endl;
+    }
+}
+int main()
+{
+    setlocale(LC_CTYPE, "rus");
+    string user_pass;
+    cout<< "¿¿¿¿¿¿¿ ¿¿¿¿¿¿: ";
+    getline(cin, user_pass);
+    check_pass(user_pass);
+    return 0;
+}
